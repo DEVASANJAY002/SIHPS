@@ -1,7 +1,7 @@
 # Smart India Hackathon Workshop
 # Date: 26:04:2025
-## Register Number:212223040032
-## Name:DEVASANJAY N
+## Register Number : 212223040032
+## Name : DEVASANJAY N
 
 ## Project: Railway Station Smart Navigation System (RSNS)
 # Problem Statement
