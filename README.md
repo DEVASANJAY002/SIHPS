@@ -80,22 +80,6 @@ User (Mobile/Kiosk) -> API Gateway -> Backend Server -> Database
                                ↳ Voice Assistant Service
 Admin Panel -> Backend -> Database
 
-# Repository Structure
-Railway-Smart-Navigation/
-│
-├── mobile-app/           # Flutter app source code
-│
-├── kiosk-app/            # Kiosk touchscreen app (ReactJS)
-│
-├── admin-panel/          # Web Admin dashboard (ReactJS)
-│
-├── backend/              # Node.js API backend
-│
-├── database/             # MongoDB models and sample data
-│
-├── README.md             # Project documentation
-│
-└── docs/                 # Architecture diagrams, APIs list
 # How it Works
 Passenger enters station.
 
