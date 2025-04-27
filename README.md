@@ -1,65 +1,139 @@
 # Smart India Hackathon Workshop
-# Date: 18:05:2024
-## Register Number:212223110033
-## Name:OVIYA P
+# Date: 26:04:2025
+## Register Number:212223040032
+## Name:DEVASANJAY N
 
-## Problem Title 
+## Project: Railway Station Smart Navigation System (RSNS)
+# Problem Statement
+Smart India Hackathon 2025 - SIH 1710
+Title: Enhancing Navigation for Railway Station Facilities and Locations
+
+Passengers often face difficulties navigating large and unfamiliar railway stations. Our goal is to design a multi-platform navigation system that provides real-time, accurate, and accessible directions inside railway stations.
+
+# Proposed Solution
+We propose RSNS (Railway Station Smart Navigation System) which consists of:
+
+1. Mobile Application (Android & iOS)
+3D interactive maps of the station.
+
+Step-by-step walking navigation.
+
+Real-time facility updates.
+
+Voice-assisted navigation (for visually impaired passengers).
+
+Accessibility options (wheelchair-friendly paths, elevators).
+
+2. Digital Kiosks at Stations
+Touch-screen kiosks at multiple entry points.
+
+Search any location or facility easily.
+
+Generate QR code for navigation path to continue on mobile.
+
+3. Admin Panel (Web)
+For railway officials to update:
+
+# Map layouts
+
+Facility locations
+
+Temporary changes (construction, closed paths, etc.)
+
+4. Integration with Existing Indian Railway Apps
+Connect with apps like IRCTC Rail Connect or station Wi-Fi apps.
+
+Provide station navigation options before passenger arrives.
+
+# Railway Station Smart Navigation System Overview
+l![image](https://github.com/user-attachments/assets/e70d54ca-f2b4-4c87-8738-2626530508d1)
+
+# Key Features
+
+Feature	Description
+📱 Mobile App	3D Maps, Real-time navigation, Voice instructions
+🖥️ Digital Kiosks	Station touchscreens for directions
+👩‍🦯 Accessibility Support	Voice navigation, wheelchair-accessible paths
+🔄 Real-time Updates	Facility/Route changes reflected immediately
+🔗 Integration	Link with existing IRCTC apps, UTS apps
+🗂️ Admin Dashboard	Update maps and facility info easily
+🧩 Technical Stack
+
+# Component	Technology
+Mobile App	Flutter (Cross-platform)
+Backend	Node.js + Express
+Database	MongoDB Atlas
+Real-Time Updates	WebSocket (Socket.IO)
+Maps & Navigation	Mapbox SDK / Google Maps SDK (Customized)
+Kiosk App	ReactJS + Electron
+Admin Panel	ReactJS + Tailwind CSS
+
+# Passenger Navigation Process
+![image](https://github.com/user-attachments/assets/2bc191aa-d6bd-4ae2-8146-239025353771)
 
 
-E-Waste Facility Locator
-## Problem Description
-Website that tells you the location of the nearest e-waste collection and recycling facility. Offers educational pop-ups on the harmful components of your e-waste and their effects on the environment and human health if not disposed correctly. There could be an option to input the model of your old device and earn credit points relative to the amount of precious metals recovered from the device if disposed correctly.
-## Problem Creater's Organization
-Ministry of Environment
+# Architecture Overview
+User (Mobile/Kiosk) -> API Gateway -> Backend Server -> Database
+                               ↳ Map Rendering Service (3D)
+                               ↳ Voice Assistant Service
+Admin Panel -> Backend -> Database
 
-## Idea
-1.Nearest E-Waste Facility Locator:
-Use Geocoding AI to find nearby e-waste facilities based on the user's current location.
-Implement image recognition to categorize e-waste when users upload photos, suggesting the appropriate recycling facility.
+# Repository Structure
+Railway-Smart-Navigation/
+│
+├── mobile-app/           # Flutter app source code
+│
+├── kiosk-app/            # Kiosk touchscreen app (ReactJS)
+│
+├── admin-panel/          # Web Admin dashboard (ReactJS)
+│
+├── backend/              # Node.js API backend
+│
+├── database/             # MongoDB models and sample data
+│
+├── README.md             # Project documentation
+│
+└── docs/                 # Architecture diagrams, APIs list
+# How it Works
+Passenger enters station.
 
-2.Virtual Assistant:
-Offer a virtual assistant that provides guidance on proper e-waste disposal methods and data wiping techniques for devices with sensitive information.
+Uses kiosk or mobile app to select their destination (e.g., "Platform 5", "Restroom", "Food Court").
 
-3.Educational Pop-ups:
-Display educational pop-ups to raise awareness about the harmful effects of e-waste on the environment and human health.
+App generates step-by-step walking path.
 
-4.Reward Points System:
-Introduce a reward points system where users earn points for each e-waste disposal, encouraging participation in recycling programs.
+Voice assistant can guide them if needed.
 
-5.Real-time Analytics Dashboard:
-Provide e-waste facilities with a dashboard showcasing real-time analytics and insights, including recycling rates and energy savings, to help users understand their impact on the environment.
+If facilities are moved (construction etc.), real-time update is pushed to user devices.
 
+Admin dashboard allows station authorities to modify the station map dynamically.
 
+# Future Enhancements
+AR Navigation inside station (Augmented Reality walking guide).
 
+Multilingual voice assistants (Hindi, Tamil, etc.).
 
+AI-based crowd density monitoring to suggest less crowded routes.
 
+Integration with station parking and EV charging stations.
 
+# Sample UI Screens (can be added later)
+Home Screen – "Find a Facility" / "Get Directions"
 
+Map Screen – 3D Station Layout
 
-## Proposed Solution / Architecture Diagram
-![alt text](image-1.png)
+Voice Guide Screen – Accessible Mode
 
-## Use Cases
-![alt text](10-2.jpg)
+Admin Panel – Update Facility Locations
 
-## Technology Stack
-React.js
+Kiosk Interface – Touch-to-search Navigation
 
-Node.js 
+# Conclusion
+This solution directly addresses the pain points of millions of Indian railway passengers by providing:
 
-PostgreSQL
+Better navigation inside massive stations,
 
-Google maps
+Inclusive design for disabled passengers,
 
-Firebox Authenticator
+Real-time dynamic updates,
 
-Git , Postman or Insomnia
-
-## Dependencies
-
-Mapping service- 10 days
-
-Data collection- 10 days
-
-budget- rs.50,000
-
+and integration with existing railway apps — making travel easier, faster, and smarter.
