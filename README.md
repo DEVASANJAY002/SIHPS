@@ -46,7 +46,8 @@ Connect with apps like IRCTC Rail Connect or station Wi-Fi apps.
 Provide station navigation options before passenger arrives.
 
 # Railway Station Smart Navigation System Overview
-l![image](https://github.com/user-attachments/assets/e70d54ca-f2b4-4c87-8738-2626530508d1)
+![21](https://github.com/user-attachments/assets/00c2bcba-1f73-45a9-8a79-91a5e39727ad)
+
 
 # Key Features
 
@@ -69,7 +70,8 @@ Kiosk App	ReactJS + Electron
 Admin Panel	ReactJS + Tailwind CSS
 
 # Passenger Navigation Process
-![image](https://github.com/user-attachments/assets/2bc191aa-d6bd-4ae2-8146-239025353771)
+![22](https://github.com/user-attachments/assets/eb32e5a7-cd34-4229-8c64-e2b78fe65090)
+
 
 
 # Architecture Overview
